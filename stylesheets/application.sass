@@ -1,0 +1,48 @@
+@import compass/reset
+@import compass/utilities
+@import compass/css3
+@import includes/fonts
+
+body
+  font-family: 'Proxima Nova' Helvetica, Arial, sans-serif
+  background: #f2f2f2
+  color: #313131
+  padding: 50px
+
+h1
+  font-family: 'Fairview'
+  font-size: 280px
+  color: #313131
+  font-weight: bold
+  text-align: center
+  text-transform: uppercase
+
+a
+  display: inline-block
+
+
+#center-block
+  width: 800px
+  height: 400px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -200px
+  margin-left: -400px
+  text-align: center
+
+.button
+  background: #45d887
+  color: white
+  font-weight: bold
+  text-decoration: none
+  font-size: 24px
+  padding: 25px 60px
+  +border-radius(5px)
+  +box-shadow(0 5px 0 #34a165)
+  +transition(all .2s ease-in-out)
+
+  &:hover
+    margin-top: 5px
+    +box-shadow(0 0 0 #34a165)
+    +transition(all .2s ease-in-out)

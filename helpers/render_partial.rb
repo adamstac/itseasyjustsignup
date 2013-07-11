@@ -4,4 +4,4 @@ module RenderPartial
   end
 end
 
-helpers RenderPartial
+Sinatra.helpers RenderPartial
