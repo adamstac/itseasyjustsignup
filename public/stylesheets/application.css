@@ -94,14 +94,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
   background: #f2f2f2;
   color: #313131;
-  padding: 50px;
 }
 
 h1 {
   font-family: "Fairview";
-  font-size: 280px;
+  font-size: 28em;
   color: #313131;
   font-weight: bold;
   text-align: center;
@@ -113,13 +113,11 @@ a {
 }
 
 #center-block {
-  width: 800px;
+  width: 100%;
+  max-width: 780px;
   height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -200px;
-  margin-left: -400px;
+  margin: 0 auto;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -128,7 +126,7 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 2.4em;
   padding: 25px 60px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -152,4 +150,35 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media all and (max-width: 779px) {
+  #center-block {
+    height: 370px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 22em;
+  }
+}
+@media all and (max-width: 550px) {
+  #center-block {
+    height: 210px;
+  }
+
+  h1 {
+    font-size: 16em;
+  }
+}
+@media all and (max-width: 400px) {
+  #center-block {
+    height: 210px;
+  }
+
+  h1 {
+    font-size: 12em;
+  }
 }
